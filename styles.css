@@ -105,12 +105,13 @@
 }
 
 .card {
-  width: 100%; /* Ocupa toda a largura da tela */
-  margin-bottom: 2%; /* Adiciona uma pequena margem inferior entre os cards */
+  width: calc(50% - 20px); /* Ocupa metade da largura menos margem */
+  margin: 10px; /* Adiciona uma margem ao redor dos cards */
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -154,6 +155,7 @@ button {
   margin-top: 10px;
 }
 
+
 /* Estilo para imagens na galeria de balões */
 img {
   width: 100%;
@@ -161,6 +163,44 @@ img {
   object-fit: cover;
   display: block;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.faixas-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.faixas-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.faixas-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.faixa-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.faixa-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+
+
+
 
 /* Estilo para a galeria de balões em dispositivos móveis */
 @media (max-width: 767px) {
