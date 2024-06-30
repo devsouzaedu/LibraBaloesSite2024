@@ -405,6 +405,13 @@ input[type=submit] {
 
 
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
 .whatsapp-button {
   display: inline-block;
   background-color: #25D366; /* Cor verde do WhatsApp */
@@ -419,6 +426,11 @@ input[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.whatsapp-button:hover {
+  background-color: #1EBB60; /* Cor mais escura para hover */
+}
+
 
 .whatsapp-button:hover {
   background-color: #1EBB60; /* Cor mais escura para hover */
