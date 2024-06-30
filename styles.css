@@ -90,7 +90,7 @@
 
 /* Estilo para o logotipo */
 .szmlogo1 {
-  max-width: 120px;
+  max-width: 60px;
 }
 
 /* Estilo para o container de conteúdo centralizado */
@@ -404,6 +404,26 @@ input[type=submit] {
 }
 
 
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366; /* Cor verde do WhatsApp */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1EBB60; /* Cor mais escura para hover */
+}
+
 /* Animação de fade para elementos com a classe fadeInUp */
 @keyframes fadeInUp {
   from {
@@ -425,5 +445,22 @@ input[type=submit] {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .faixa-item {
+    width: 80%;
+    margin: 10% auto;
+    box-sizing: border-box;
+  }
+
+  .faixa-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+    border-radius: 15px;
   }
 }
