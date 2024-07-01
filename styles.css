@@ -145,6 +145,14 @@
   animation: slideInLeft 1s ease-out forwards;
 }
 
+.spshape {
+  text-align: center;
+  margin: 0;
+  font-weight: bold; /* Adiciona peso à fonte */
+  font-size: 2em; /* Aumenta o tamanho da fonte se necessário */
+}
+
+
 /* Estilo para o texto na seção div2text */
 .div2text {
   text-align: center;
@@ -225,6 +233,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Estilo para a seção de faixas promocionais */
 .faixas-section {
   padding: 50px 20px;
   text-align: center;
@@ -234,6 +243,7 @@ body {
 .faixas-title {
   font-size: 2em;
   margin-bottom: 20px;
+  font-weight: bold; /* Adiciona peso à fonte */
 }
 
 .faixas-slider {
@@ -241,8 +251,15 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-.faixa-item {
+.faixa-slide {
+  display: flex;
   min-width: 100%;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.faixa-item {
+  width: 45%; /* Ajuste a largura das faixas para caber duas por slide */
   box-sizing: border-box;
   padding: 10px;
 }
@@ -255,10 +272,27 @@ body {
   object-fit: contain;
 }
 
+@media (max-width: 767px) {
+  .faixa-slide {
+    flex-direction: column;
+  }
+
+  .faixa-item {
+    width: 80%;
+    margin: 10% auto;
+    box-sizing: border-box;
+  }
+}
+
+
 /* Estilos para a Galeria de Slides */
+/* Estilo para a galeria de slides */
 .voo-de-balao-casal {
   text-align: center;
   margin: 50px 0;
+}
+.voo-de-balao-casal, h1 {
+  font-weight: bold;
 }
 
 .slide-container {
@@ -274,13 +308,28 @@ body {
 }
 
 .slide {
+  display: flex;
   min-width: 100%;
+  justify-content: space-around;
 }
 
 .slide img {
-  width: 100%;
+  width: 45%;
   height: auto;
   border-radius: 10px;
+  margin: 0 2.5%;
+}
+
+@media (max-width: 767px) {
+  .slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide img {
+    width: 80%;
+    margin: 10% 0;
+  }
 }
 
 
