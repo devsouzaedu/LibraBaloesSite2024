@@ -90,6 +90,210 @@ body {
   font-size: 0.9em; /* Reduz o tamanho da fonte dos botões */
 }
 
+/* Seção de Special Shapes */
+.special-shapes {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.titulo-special-shapes {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.texto-special-shapes {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.special-shapes-slider {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.special-shapes-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Adaptando a galeria para mobile */
+@media (max-width: 768px) {
+  .titulo-special-shapes {
+    font-size: 2em;
+  }
+  
+  .texto-special-shapes {
+    font-size: 1em;
+  }
+
+  .special-shapes-slider {
+    max-width: 100%;
+  }
+}
+
+
+.special-section {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.special-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.special-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.special-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Voo em Grupo */
+.voo-grupo-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 80%;
+  margin: 0 auto 40px;
+}
+
+.gallery-slider {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adapte o slider */
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Seção Banners Para Balão */
+.banners-balao-section {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 80%;
+  margin: 0 auto 40px;
+}
+
+.gallery-slider {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adapte o slider */
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Botão de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  background-color: #25D366; /* Cor do WhatsApp */
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-whatsapp i {
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+}
+
+
+/* Botão de WhatsApp fixo */
+.whatsapp-button-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.btn-whatsapp-fixed {
+  display: flex;
+  align-items: center;
+  background-color: #25D366; /* Cor do WhatsApp */
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-whatsapp-fixed i {
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.btn-whatsapp-fixed:hover {
+  background-color: #128C7E;
+}
+
+
+
 /* Rodapé */
 .footer {
   background-color: #000;
