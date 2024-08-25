@@ -1,9 +1,7 @@
 $(document).ready(function() {
   // Navbar Opacity on Scroll
   $(window).on('scroll', function() {
-    var scrollPosition = $(window).scrollTop();
-    var opacity = scrollPosition / 100; // Adjust as needed
-    $('.navbar').css('background-color', 'rgba(0, 0, 0, ' + opacity + ')');
+    $('.navbar').css('background-color', 'transparent');
   });
 
   // Language Adaptation and Dark Mode
