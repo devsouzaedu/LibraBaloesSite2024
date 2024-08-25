@@ -9,8 +9,10 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #000;
+  background-color: transparent; /* Define a navbar como transparente */
   padding: 10px 20px;
+  box-shadow: none; /* Remove qualquer sombra */
+  border: none; /* Remove qualquer borda */
 }
 
 .navbar-brand img {
@@ -55,13 +57,23 @@ body {
   width: 90%; /* Reduz o conteúdo em telas menores */
 }
 
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0); /* Posição inicial e final */
+  }
+  50% {
+    transform: translateY(-10px); /* Move a imagem para cima */
+  }
+}
+
 .frota-baloes {
   max-width: 80%;
   height: auto;
   margin: 20px auto;
   display: block;
-  animation: flutuarBalancar 4s ease-in-out infinite;
+  animation: flutuar 4s ease-in-out infinite; /* Aplica a animação de flutuação */
 }
+
 
 .maiorconst1 {
   color: #fff;
