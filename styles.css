@@ -14,9 +14,9 @@ body {
 }
 
 .navbar-brand img {
-  max-width: 50px; /* Reduz o logo em telas menores */
+  max-width: 100px; /* Reduz o logo em telas menores */
 }
-
+ 
 /* Seção div1home */
 .div1home {
   position: relative;
